@@ -3,8 +3,9 @@
 /**
  * _puts_recursion - function like puts();
  * @s: input
- * Return: 0
+ * Return: always 0
  */
+
 void _puts_recursion(char *s)
 {
 	if (*s)
@@ -12,6 +13,7 @@ void _puts_recursion(char *s)
 		_putchar(*s);
 		_puts_recursion(s + 1);
 	}
+
 	else
 		_putchar('\n');
 }
